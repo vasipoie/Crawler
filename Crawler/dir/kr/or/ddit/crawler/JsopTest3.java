@@ -6,11 +6,11 @@ import java.util.Arrays;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
-public class JsopTest {
+public class JsopTest3 {
 	public static void main(String[] args) {
 		try {
-//			https://www.yes24.com/24/Category/Display/001001025008
-			Document doc = Jsoup.connect("https://www.yes24.com/24/Category/Display/001001025008").get();
+			String url = "https://www.yes24.com/24/Category/Display/001001001011";
+			Document doc = Jsoup.connect(url).get();
 //			System.out.println(doc.html());
 			String str = doc.html();
 			String[] line = str.split("\n");
